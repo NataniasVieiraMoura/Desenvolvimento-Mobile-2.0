@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    font-family: "Dancing Script", serif;
+}
+.container-cafe-manha-produtos p,.container-almoco-produtos p{
+    font-family: "Dancing Script", serif;
+    font-size: 25px;
+}
+
+.container-form input, #tipo, #status,#prioridade,#imagem{
+    border-end-start-radius: 35px;
+    border-start-end-radius: 35px;
+    border-end-end-radius: 0;
+    border-start-start-radius: 0;
+    color: #ffa443a5;
+    font-size: 18px;
+}
+
+#data_vencimento{
+    background-color: rgb(80, 24, 0);
+}
+
+.titulo{
+    font-size: 30px ;
+    color: #EBC181;
+}
+
+.botao-cadastrar, .botao-voltar{
+    color:#EBC181;
+}
+
+#filtro-status, .barra-pesquisa #pesquisa::placeholder{
+    color:#EBC181;
+    font-size: 20px;
+}
+
+label,input{
+    padding-left: 25px;
+}
+#imagem{
+    padding-left: 20px;
+}

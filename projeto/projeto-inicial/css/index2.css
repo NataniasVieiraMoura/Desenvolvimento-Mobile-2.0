@@ -1,0 +1,180 @@
+
+/*classe do botão de adicionar produtos*/
+.container-botao-novo{
+    text-align: center;
+    margin: 50px auto;
+    width: 100%;
+}
+.titulo{
+    color: #fff;
+}
+
+.botao-novo {
+    background-color: #1F1007;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid #1F1007;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.botao-novo:hover {
+    background-color:rgba(118, 182, 14, 0.72);
+    color: #EBC181;
+}
+/*estilo da classe do botão de excluir*/
+.botao-excluir {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 6px 11px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.botao-excluir {
+    background-color: #dc3545;
+}
+
+.botao-excluir:hover {
+    background-color: #c82333;
+}
+/*estilo da classe da caixa de filtros*/
+.container-filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.filtro-status, .barra-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.filtro-status label {
+    color: #EBC181;
+    font-weight: 500;
+}
+/*estilo da classe da barra de pesquisa*/
+.filtro-status select, .barra-pesquisa input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #EBC181;
+    background-color: #1F1007;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.barra-pesquisa input {
+    width: 300px;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #999;
+    font-size: 25px;
+
+}
+
+.produto-escondido {
+    /*Esconde o produto que não atende aos critérios de filtro*/
+    display: none !important;
+}
+
+/* Estilo para os campos do formulário */
+.container-form input,
+.container-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #EBC181;
+    background-color: #1F1007;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/*Sombra para as bordas do imput*/
+.container-form input:focus,
+.container-form select:focus {
+    border-color: rgba(118, 182, 14, 0.72);
+    outline: none;
+    box-shadow: 0 0 5px rgba(235, 193, 129, 0.5);
+}
+
+.container-form label {
+    color: #EBC181;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Estilo específico para input type file */
+.container-form input[type="file"] {
+    padding: 8px;
+    color: #EBC181;
+    cursor: pointer;
+}
+
+/* Estilo para os botões do formulário */
+.container-botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.botao-cadastrar,.botao-voltar {
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+}
+
+.botao-cadastrar {
+    background-color: rgba(118, 182, 14, 0.72);
+    color: #FFFFFF;
+}
+
+.botao-cadastrar:hover {
+    background-color: rgba(118, 182, 14, 0.9);
+    transform: translateY(-4px);
+}
+
+.botao-voltar {
+    background-color: #dc3545;
+    color: #FFFFFF;
+}
+
+.botao-voltar:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Estilo para mensagens de erro de validação */
+.container-form input:invalid,
+.container-form select:invalid {
+    border-color: #dc3545;
+}
+
+/* Estilo para placeholder */
+.container-form input::placeholder {
+    color: #666;
+}
+

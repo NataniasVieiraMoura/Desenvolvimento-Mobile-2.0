@@ -1,0 +1,230 @@
+
+.logo{
+    /*largura da logo*/
+    width: 500px;
+}
+
+body{
+    background-color: #333b1e;
+    background-image: url("../img/banner-site.jpg");
+}
+main{
+    /*altura mínima da página(main)*/
+    min-height: 100vh;
+    display: flex;
+    /*alinha os elementos na vertical*/
+    flex-direction: column;
+}
+
+.container-banner{
+    width: 100%;
+    height: 80%;
+    /*background-image: url("../img/banner-site.jpg");*/
+    /*centraliza a imagem*/
+    background-position: center;
+    /*não repete a imagem para ocupar toda a área*/
+    background-repeat: no-repeat;
+}
+
+.container-texto-banner{
+    /*centraliza os elementos*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+.container-banner h1,p{
+    color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+.container-cafe-manha, .container-almoco{
+    /*centraliza o container das duas listas*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-cafe-manha-titulo, .container-almoco-titulo{
+    /*centraliza o titulo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-cafe-manha-titulo h3, .container-almoco-titulo h3{
+    /*centraliza o texto e deixa o titulo maior*/
+    font-size: 32px;
+    color: #EBC181;
+    text-align: center;
+    margin: 15px 0px 5px;
+}
+
+.container-cafe-manha-produtos, .container-almoco-produtos{
+    display: flex;
+    /*distribui os produtos igualmente*/
+    justify-content: space-around;
+    /*quebra a linha quando o container ficar menor*/
+    flex-wrap: wrap;
+}
+
+.container-produto {
+    display: flex;
+    /*distribui os elementos na vertical*/
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid #EBC181 2px;
+    /*hidden serve para esconder o conteúdo que ultrapassa o limite de altura do container*/
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    min-height: 400px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.container-produto .container-foto {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+
+.container-produto .container-foto img {
+    /*largura da imagem*/
+    width: 100%;
+    /*altura da imagem*/
+    height: 100%;
+    /*ajusta a imagem para o tamanho do container*/
+    object-fit: cover;
+}
+
+.container-produto p {
+    margin: 10px 0;
+    text-align: center;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-produto p:nth-child(4){
+    color: #9B8357;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-produto p:nth-child(2){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ornaments{
+    width: 200px;
+}
+
+.container-botao {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-editar, .botao-excluir {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    /*tempo de transição da cor do botão*/
+    transition: background-color 0.3s;
+}
+
+.botao-editar:hover {
+    background-color: #bb601b;
+}
+
+.botao-excluir {
+    /*cor do botão de excluir*/
+    background-color: #dc3545;
+}
+
+.botao-excluir:hover {
+    /*cor do botão de excluir ao passar o mouse*/
+    background-color: #c82333;
+}
+
+.container-form {
+    /*centraliza o container do formulário*/
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    /*espaço entre os elementos*/
+    gap: 10px;
+}
+
+.container-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao-cadastrar, .botao-voltar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao-cadastrar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.botao-voltar {
+    background-color: #f44336;
+    color: white;
+}
+
+.container-admin-banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-admin {
+    width: 200px;
+}
+
+
+/*Continuação*/
+
